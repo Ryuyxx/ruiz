@@ -1,32 +1,94 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
+import Link from "next/link";
 
 const Gallery = () => {
     return(
         <Layout title="Gallery">
-            <div className="overflow-hidden shadow-lg rounded-lg relative mb-1 mb-6 w-64">
-                <img alt="p1" src="/gallery/project1.png" className="rounded-lg"/>
-                <div className="absolute bg-gradient-to-b bg-opacity-60 from-transparent to-black w-full p-4 bottom-0">
-                    <p className="text-white text-2xl nb-4">
-                        Envelope
-                    </p>
-                    <div className="flex justify-between">
-                        <p className="text-sm text-gray-300 flex items-center">
-                            28/12/2020
-                        </p>
-                        <p className="text-sm text-gray-300 flex items-center">
-                            <svg width="10" height="10" fill="currentColor" className="h-4 w-4" viewBox="0 0 1792 1792"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M491 1536l91-91-235-235-91 91v107h128v128h107zm523-928q0-22-22-22-10 0-17 7l-542 542q-7 7-7 17 0 22 22 22 10 0 17-7l542-542q7-7 7-17zm-54-192l416 416-832 832h-416v-416zm683 96q0 53-37 90l-166 166-416-416 166-165q36-38 90-38 53 0 91 38l235 234q37 39 37 91z">
-                                </path>
-                            </svg>
-                            Ruizu
-                        </p>
+
+            <section className="p-10 min-h-screen min-w-full flex md:flex-row items-center justify-around bg-white flex-wrap sm:flex-col">
+
+                <Link href="/gallery/rabbit">
+                    <div className="h-64 w-64 relative cursor-pointer m-10">
+                        <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                        <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
+                            <div className="h-full w-full bg-white rounded-lg shadow-2xl">
+                                <Image src="/../public/gallery/project1.png"
+                                       alt="Picture of the author"
+                                       width={500}
+                                       height={400}
+                                />
+                                <p className="">便箋</p>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                    <div className="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
                     </div>
                 </div>
-            </div>
+                </Link>
 
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                    <div className="absolute inset-0 transform  hover:rotate-45 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
+                    </div>
+                </div>
+                </Link>
+
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                    <div className="absolute inset-0 transform  hover:-rotate-45 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
+                    </div>
+                </div>
+                </Link>
+
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                    <div className="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
+                    </div>
+                </div>
+                </Link>
+
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                    <div className="absolute inset-0 transform hover:-translate-x-10 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
+                    </div>
+                </div>
+                </Link>
+
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+
+                    <div className="absolute inset-0 transform hover:rotate-90 hover:translate-x-full hover:scale-150 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
+                    </div>
+                </div>
+                </Link>
+
+                <Link href="/">
+                <div className="h-64 w-64 relative cursor-pointer m-10">
+                    <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
+                    <div className="absolute inset-0 transform hover:skew-y-12 transition duration-300">
+                        <div className="h-full w-full bg-white rounded-lg shadow-2xl" />
+                    </div>
+                </div>
+                </Link>
+
+            </section>
         </Layout>
     )
 }
