@@ -12,19 +12,19 @@ const Gallery = () => {
                     <div className="h-64 w-64 relative cursor-pointer m-10">
                         <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                         <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
-                            <div className="h-full w-full bg-white rounded-lg shadow-2xl">
+                            <div className="h-full w-full bg-white rounded-lg shadow-2xl pt-5">
                                 <Image src="/../public/gallery/project1.png"
                                        alt="Picture of the author"
                                        width={500}
                                        height={400}
                                 />
-                                <p className="">便箋</p>
+                                <p className="font-mono text-center">Letter Paper</p>
                             </div>
                         </div>
                     </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                     <div className="absolute inset-0 transform hover:rotate-90 hover:scale-75 transition duration-300">
@@ -33,7 +33,7 @@ const Gallery = () => {
                 </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                     <div className="absolute inset-0 transform  hover:rotate-45 transition duration-300">
@@ -42,7 +42,7 @@ const Gallery = () => {
                 </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                     <div className="absolute inset-0 transform  hover:-rotate-45 transition duration-300">
@@ -51,7 +51,7 @@ const Gallery = () => {
                 </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                     <div className="absolute inset-0 transform origin-left hover:-rotate-45 transition duration-300">
@@ -60,7 +60,7 @@ const Gallery = () => {
                 </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                     <div className="absolute inset-0 transform hover:-translate-x-10 transition duration-300">
@@ -69,7 +69,7 @@ const Gallery = () => {
                 </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
 
@@ -79,7 +79,7 @@ const Gallery = () => {
                 </div>
                 </Link>
 
-                <Link href="/">
+                <Link href="#">
                 <div className="h-64 w-64 relative cursor-pointer m-10">
                     <div className="absolute inset-0 bg-white opacity-25 rounded-lg shadow-2xl" />
                     <div className="absolute inset-0 transform hover:skew-y-12 transition duration-300">

@@ -8,7 +8,6 @@ export default function Rabbit() {
            alt="Picture of the author"
            width={500}
            height={400} />
-
       </Layout>
   );
 }
