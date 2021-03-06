@@ -14,7 +14,7 @@ const Gallery = () => {
                         <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
                             <div className="h-full w-full bg-white rounded-lg shadow-2xl pt-5">
                                 <Image src="/../public/gallery/project1.png"
-                                       alt="Picture of the author"
+                                       alt="rabbit letter paper"
                                        width={500}
                                        height={400}
                                 />
