@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Layout({ children, title = "Ruizu" }) {
     return (
+        <html lang="ja-JP">
         <div className="flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-mono">
             <Head>
                 <title>{title}</title>
@@ -21,10 +22,10 @@ export default function Layout({ children, title = "Ruizu" }) {
                                     <div className="hidden md:block">
                                         <div className="ml-10 flex items-baseline space-x-4">
                                             <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                                               href="/#">
+                                               href="/">
                                                 Home
                                             </a>
-                                            <a className="text-gray-800 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                                            <a className="text-gray-300 dark:text-white  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                                                href="/gallery">
                                                 Gallery
                                             </a>
@@ -80,5 +81,6 @@ export default function Layout({ children, title = "Ruizu" }) {
                 Hoi Ching Chan
             </footer>
         </div>
+        </html>
     );
 }
