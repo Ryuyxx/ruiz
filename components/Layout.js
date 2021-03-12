@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Layout({ children, title = "Ruizu" }) {
     return (
         <html lang="ja-JP">
-        <div className="bg-gradient-to-tl from-blue-100 to-blue-400 flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-mono">
+        <div className="flex justify-center items-center flex-col min-h-screen text-gray-600 text-sm font-mono">
             <Head>
                 <title>{title}</title>
             </Head>
@@ -77,8 +77,8 @@ export default function Layout({ children, title = "Ruizu" }) {
             </main>
 
             <footer className="w-full h-12 flex justify-center items-center">
-                <FontAwesomeIcon className="mr-2" icon={faCopyright} />
-                Hoi Ching Chan
+                <FontAwesomeIcon className="p-0.5" icon={faCopyright} />
+                <span className="text-1/2"> HoiChingChan</span>
             </footer>
         </div>
         </html>
