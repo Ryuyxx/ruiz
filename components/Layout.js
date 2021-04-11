@@ -1,7 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
-import { faCopyright } from '@fortawesome/free-regular-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {LightningBoltIcon} from '@heroicons/react/outline'
 
 export default function Layout({ children, title = "Ruizu" }) {
     return (
@@ -16,9 +14,7 @@ export default function Layout({ children, title = "Ruizu" }) {
             {/*            <div className="max-w-7xl mx-auto px-8">*/}
             {/*                <div className="flex items-center justify-between h-16">*/}
             {/*                    <div className=" flex items-center">*/}
-            {/*                        <a className="flex-shrink-0" href="/">*/}
-            {/*                            <img className="h-8 w-8" src="/icons/rabbit.svg" alt="Workflow"/>*/}
-            {/*                        </a>*/}
+
             {/*                        <div className="hidden md:block">*/}
             {/*                            <div className="ml-10 flex items-baseline space-x-4">*/}
             {/*                                <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-sm font-medium"*/}
@@ -77,7 +73,7 @@ export default function Layout({ children, title = "Ruizu" }) {
             </main>
 
             <footer className="w-full h-12 flex justify-center items-center">
-                <FontAwesomeIcon className="p-0.5" icon={faCopyright} />
+                <LightningBoltIcon  className="h-3.5 w-3.5 mr-1 text-gray-500" />
                 <span className="text-1/2"> HoiChingChan</span>
             </footer>
         </div>

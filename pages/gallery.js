@@ -8,7 +8,7 @@ const Gallery = () => {
 
             <section className="p-10 min-h-screen min-w-full flex md:flex-row items-center justify-around  flex-wrap sm:flex-col ">
 
-                <Link href="/gallery/rabbit">
+                <Link href="">
                     <div className="h-64 w-64 relative cursor-pointer m-10">
                         <div className="absolute inset-0 opacity-25 rounded-lg shadow-2xl" />
                         <div className="absolute inset-0 transform  hover:scale-75 transition duration-300">
